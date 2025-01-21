@@ -18,10 +18,10 @@ const ProductsPage = () => {
             className='grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4 mb-8'
            
         >
-            <StatCard name='Total Products' icon={Package} value={1234} color='#6366F1' />
-            <StatCard name='Top Selling' icon={TrendingUp} value={89} color='#10B981' />
-            <StatCard name='Stock Out' icon={AlertTriangle} value={23} color='#F59E0B' />
-            <StatCard name='Total Profit' icon={DollarSign} value={"$543,210"} color='#EF4444' />
+            <StatCard name='Total Products' icon={Package} value={1234} color='#FFFFFF' />
+            <StatCard name='Top Selling' icon={TrendingUp} value={89} color='#FFFFFF' />
+            <StatCard name='Stock Out' icon={AlertTriangle} value={23} color='#ff0000' />
+            <StatCard name='Total Profit' icon={DollarSign} value={"$543,210"} color='#90EE90' />
         </div>
 
         <ProductsTable />

@@ -8,12 +8,12 @@ const SIDEBAR_ITEMS = [
 	{
 		name: "Overview",
 		icon: BarChart2,
-		color: "#6366f1",
+		color: "#FFFFFF",
 		href: "/",
 	},
-	{ name: "Products", icon: ShoppingBag, color: "#8B5CF6", href: "/products" },
+	{ name: "Products", icon: ShoppingBag, color: "#FFFFFF", href: "/products" },
 	 
-	{ name: "Settings", icon: Settings, color: "#6EE7B7", href: "/settings" },
+	{ name: "Settings", icon: Settings, color: "#FFFFFF", href: "/settings" },
 ];
 
 
@@ -28,7 +28,7 @@ const Sidebar = () => {
         isSidebarOpen ? "w-64" : "w-20"
     }`} animate={{ width: isSidebarOpen ? 256 : 80 }}>
 
-        <div className='h-full bg-cyan-700 bg-opacity-50 backdrop-blur-md p-4 flex flex-col border-r border-gray-700'>
+        <div className='h-full bg-blue-600  p-4 flex flex-col border-r border-white'>
 
             <motion.button
             
@@ -45,7 +45,7 @@ const Sidebar = () => {
             <nav className='mt-8 flex-grow'>
 					{SIDEBAR_ITEMS.map((item) => (
 						<Link key={item.href} to={item.href}>
-							<motion.div className='flex items-center p-4 text-lg font-medium rounded-lg hover:bg-green-800 transition-colors mb-2'>
+							<motion.div className='flex items-center p-4 text-lg font-medium rounded-lg hover:bg-blue-400 transition-colors mb-2 hover:text-black'>
 								<item.icon size={20} style={{ color: item.color, minWidth: "20px" }} />
 								<AnimatePresence>
 									{isSidebarOpen && (
