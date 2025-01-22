@@ -28,7 +28,7 @@ const Sidebar = () => {
         isSidebarOpen ? "w-64" : "w-20"
     }`} animate={{ width: isSidebarOpen ? 256 : 80 }}>
 
-        <div className='h-full bg-blue-600  p-4 flex flex-col border-r border-white'>
+        <div className='h-full bg-gray-800 bg-opacity-50 backdrop-filter backdrop-blur-lg  p-4 flex flex-col border-r border-white'>
 
             <motion.button
             
